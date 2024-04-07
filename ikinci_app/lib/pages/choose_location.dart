@@ -9,30 +9,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
   int counter = 0;
 
   //asyncronüs yaptık koda async yazarak.
-  void getData() async {
-    //sıkıntı bir kodun diğerinden bağımsız çalışması
 
-    // await özelliği burada kullanılacak  
-    await Future.delayed(Duration(seconds: 3),(){
-      print('eray');
-    });
-
-    int age = await Future.delayed(Duration(seconds: 1),(){
-      return 23;
-    });
-
-    //üstteki kod bitmeden done yazmayacak mesela.
-    print(age);
-
-
-  }
-
-
-  //mesela verileri girebilirsin bu noktada bence
-  void initState(){ 
-    super.initState();
-    getData();
-  }
 
   //build kısmı her güncellemede tekrar inşaa edilir çalışır
   //initState ise sayfa ilk yüklendikten sonra daha çalışmaz
