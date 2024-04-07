@@ -10,6 +10,11 @@ Elevated/icon Button ontapped'da fonksiyonu, child: içerisinde yazısı veya ik
 Text-> string türünü ekrana yazdırıyoruz
 Row/Column-> birden fazla widged içeren widgedler, AlignMainAxis ve AlignCrossAxis gibi iki tane align özelliği var. Children içerisinde widgetleri listeleyebiliyorsun.
 
+SetState( ****
+  flutter'da her şey kökten inşaa edilir. eğer ki bir veriniz değişirse bu verinin bulunduğu dizin tekrar inşaa edilmelidir aksi taktirde veri değişse bile ekrana yansımaz.
+  set state içerisinde değişen veriler(int veya listeden bir eleman silinmesi, eklenemsi) o dizinin bulunduğu dizini tekrar inşaa eder.
+)
+
 
 Kullanışlığı keşfettiğim widgetler
 draggable-> üzerine basıp sürükleyebildiğimiz bir etiket, üç parametresi var. sürüklerken aktifleşen widget, arkasında bıraktığı widget ve hedefte iken ne olacağına dair bir widget.
