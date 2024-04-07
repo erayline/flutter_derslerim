@@ -6,6 +6,15 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
+  int counter = 0;
+
+  //mesela verileri girebilirsin bu noktada bence
+  void initState(){ 
+    super.initState();
+  }
+
+  //build kısmı her güncellemede tekrar inşaa edilir çalışır
+  //initState ise sayfa ilk yüklendikten sonra daha çalışmaz
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +24,11 @@ class _ChooseLocationState extends State<ChooseLocation> {
         title: Text('choose a location'),
         centerTitle: true,
       ),
-      body: Text('choose location'),
+      body: ElevatedButton(onPressed: (){
+        setState(() {
+          counter+=1;
+        });
+      }, child: Text('${counter}'),),
     );
   }
 }
